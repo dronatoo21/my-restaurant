@@ -1,4 +1,5 @@
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaBurger } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
@@ -6,7 +7,8 @@ const Footer = () => {
             <div className="hero-overlay bg-opacity-70"></div>
             <footer className="footer p-10 text-white">
               <aside>
-                <img className="w-32" src="https://i.ibb.co/2PLfjs4/logo.png" alt="logo" />
+                {/* <img className="w-32" src="https://i.ibb.co/2PLfjs4/logo.png" alt="logo" /> */}
+                <Link to="/"><FaBurger className="text-4xl ml-6 text-yellow-400"/></Link>
                 <p className="pl-6"><span className="text-lg">My Restaurant</span><br/>Copyright © 2024 - All right reserved</p>
               </aside> 
               <nav>
