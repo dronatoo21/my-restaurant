@@ -4,7 +4,9 @@ import Footer from "../../Pages/Shared/Footer/Footer";
 const Main = () => {
     return (
         <div>
-            <Outlet/>            
+            <div className="min-h-[70vh]">
+                <Outlet/>
+            </div>            
             <Footer/>
         </div>
     );
