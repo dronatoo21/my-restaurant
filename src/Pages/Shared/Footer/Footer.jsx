@@ -8,8 +8,8 @@ const Footer = () => {
             <footer className="footer p-10 text-white">
               <aside>
                 {/* <img className="w-32" src="https://i.ibb.co/2PLfjs4/logo.png" alt="logo" /> */}
-                <Link to="/"><FaBurger className="text-4xl ml-6 text-yellow-400"/></Link>
-                <p className="pl-6"><span className="text-lg">My Restaurant</span><br/>Copyright © 2024 - All right reserved</p>
+                <Link to="/"><FaBurger className="text-4xl md:ml-6 text-yellow-400"/></Link>
+                <p className="md:pl-6"><span className="text-lg font-semibold">My Restaurant</span><br/>Copyright © 2024 - All right reserved</p>
               </aside> 
               <nav>
                 <h6 className="footer-title">OUTLET OPENING HOURS</h6> 

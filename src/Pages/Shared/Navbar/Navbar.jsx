@@ -25,7 +25,7 @@ const Navbar = () => {
                 </ul>
               </div>
               <details className="dropdown dropdown-end md:hidden">
-                <summary className="m-1 btn bg-transparent border-none text-white text-xl"><IoMenu className="text-2xl"/></summary>
+                <summary className="btn bg-transparent border-none text-white text-xl"><IoMenu className="text-2xl"/></summary>
                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 text-black rounded-lg font-medium flex flex-col gap-2">
                   {Links}
                 </ul>
