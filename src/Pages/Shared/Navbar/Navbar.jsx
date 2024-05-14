@@ -12,7 +12,7 @@ const Navbar = () => {
         <NavLink><li className="text-base font-semibold hover:text-yellow-400">Login</li></NavLink>
     </>
     return (
-        <div className="rounded-md text-white bg-gray-500 md:py-2 px-5">
+        <div className="rounded-md text-white bg-black fixed bg-opacity-30 z-10 container mx-auto md:py-2 px-5">
             <div className="navbar bg-transparent">
               <div className="flex-1">
                 {/* <Link to="/"><img className="w-24" src="https://i.ibb.co/2PLfjs4/logo.png" alt="logo" /></Link> */}
