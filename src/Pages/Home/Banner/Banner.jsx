@@ -1,11 +1,9 @@
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useRef } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import './style.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Banner = () => {
     const progressCircle = useRef(null);
@@ -16,18 +14,7 @@ const Banner = () => {
     };
     return (
         <div>
-            {/* <Carousel>
-                <div className="md:h-[90vh]">
-                    <img src="https://i.ibb.co/grkjwLB/steak.jpg" />
-                </div>
-                <div className="md:h-[90vh]">
-                    <img src="https://i.ibb.co/3F0XW3r/pizza.png" />
-                </div>
-                <div className="md:h-[90vh]">
-                    <img src="https://i.ibb.co/F6yWcft/chicken.png" />
-                </div>
-            </Carousel> */}
-            <Swiper
+        <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
