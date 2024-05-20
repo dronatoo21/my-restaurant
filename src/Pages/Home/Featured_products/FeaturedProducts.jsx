@@ -1,11 +1,9 @@
+import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
+
 const FeaturedProducts = () => {
     return (
         <section className="my-14">
-            <div className="flex items-center gap-2 justify-center mb-8">
-                <hr className="border-b-1 border-gray-300 w-[200px]"/>
-                <h1 className="text-xl font-bold">Featured Products</h1>
-                <hr className="border-b-1 border-gray-300 w-[200px]"/>
-            </div>
+            <SectionTitle title={"Featured Products"}/>
             <div className="flex flex-row gap-2 h-[430px]">
                 <div className="flex flex-col justify-between flex-1">
                     <div>
