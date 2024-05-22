@@ -1,6 +1,6 @@
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
-import drink from "../../../../public/banner logos/drink-banner.png"
-import dessert from "../../../../public/banner logos/dessert-banner.png"
+import drink from "../../../assets/banner logos/drink-banner.png"
+import dessert from "../../../assets/banner logos/dessert-banner.png"
 
 const FeaturedProducts = () => {
     return (
