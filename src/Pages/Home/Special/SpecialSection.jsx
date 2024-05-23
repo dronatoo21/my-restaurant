@@ -3,14 +3,14 @@ import "./special.css"
 const SpecialSection = () => {
     return (
         <div className="special-section text-white bg-fixed bg-center bg-cover my-10 rounded-md">
-            <div className="md:flex py-20 px-36 justify-center bg-opacity-60 bg-black">
+            <div className="md:flex py-10 px-12 lg:py-20 lg:px-36 justify-center bg-opacity-60 bg-black">
                 <div>                
-                    <img className="rounded-lg" src={specialItem} alt="burger" />
+                    <img className="rounded-lg shadow-white mx-auto shadow-sm" src={specialItem} alt="burger" />
                 </div>
-                <div className="md:ml-10">                
-                    <h3>Burger</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, quis. Voluptas temporibus quaerat consequatur. Architecto earum officia, at    quibusdam ad debitis error, animi quia, molestias recusandae vitae pariatur rem quod?</p>
-                    <button className="btn">Read More</button>
+                <div className="mt-5 md:mt-0 md:ml-10 flex justify-center flex-col gap-2 md:gap-5">                
+                    <h3 className="text-lg lg:text-xl font-bold">Burgeroni Burger</h3>
+                    <p className="text-sm lg:text-base">Get ready to savor the unparalleled flavors of the Burgeroni, our signature gourmet burger that brings together the best of classic and innovative ingredients. Each bite is a journey of taste, crafted for those who appreciate the art of a perfect burger.</p>
+                    <button className="btn btn-outline hover:bg-white hover:text-black text-white md:w-[200px]">Buy Now</button>
                 </div>
             </div>
         </div>
