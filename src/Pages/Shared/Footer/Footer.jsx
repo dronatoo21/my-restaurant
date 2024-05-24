@@ -1,9 +1,10 @@
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaBurger } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import footBg from "../../../assets/footer/chef-service.jpg"
 const Footer = () => {
     return (
-        <div className="hero" style={{backgroundImage: 'url(https://i.ibb.co/tZp9D3v/chef-service.jpg)'}}>
+        <div className="hero" style={{backgroundImage: `url(${footBg})`}}>
             <div className="hero-overlay bg-opacity-70"></div>
             <footer className="footer p-10 text-white">
               <aside>
