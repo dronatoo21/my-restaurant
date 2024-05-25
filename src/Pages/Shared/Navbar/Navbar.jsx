@@ -12,7 +12,7 @@ const Navbar = () => {
         <NavLink><li className="text-base font-semibold hover:text-yellow-400">Login</li></NavLink>
     </>
     return (
-        <div className="rounded-md text-white bg-black fixed bg-opacity-30 z-10 container mx-auto md:py-2 px-5">
+        <div className="md:rounded-md text-white bg-black md:fixed bg-opacity-30 z-10 container mx-auto md:py-2 px-5">
             <div className="navbar bg-transparent">
               <div className="flex-1">
                 {/* <Link to="/"><img className="w-24" src="https://i.ibb.co/2PLfjs4/logo.png" alt="logo" /></Link> */}
@@ -26,7 +26,7 @@ const Navbar = () => {
               </div>
               <details className="dropdown dropdown-end md:hidden">
                 <summary className="btn bg-transparent border-none text-white text-xl"><IoMenu className="text-2xl"/></summary>
-                <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 text-black rounded-lg font-medium flex flex-col gap-2">
+                <ul className="p-2 shadow menu dropdown-content z-30 bg-base-100 text-black rounded-lg font-medium flex flex-col gap-2">
                   {Links}
                 </ul>
               </details>
