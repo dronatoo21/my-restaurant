@@ -35,12 +35,7 @@ const Banner = () => {
       >
         <SwiperSlide>
             <div>
-                <img src={b1} />
-            </div>    
-        </SwiperSlide>
-        <SwiperSlide>
-            <div>
-                <img src={b2} />
+                <img src={b4} />
             </div>    
         </SwiperSlide>
         <SwiperSlide>
@@ -50,7 +45,12 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
             <div>
-                <img src={b4} />
+                <img src={b1} />
+            </div>    
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <img src={b2} />
             </div>    
         </SwiperSlide>
         <div className="autoplay-progress h-[5vh]" slot="container-end">
