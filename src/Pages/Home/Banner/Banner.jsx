@@ -5,6 +5,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './style.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import b1 from '../../../assets/Banner/b1.png'
+import b2 from '../../../assets/Banner/b2.png'
+import b3 from '../../../assets/Banner/b3.png'
+import b4 from '../../../assets/Banner/b4.png'
 const Banner = () => {
     const progressCircle = useRef(null);
     const progressContent = useRef(null);
@@ -31,17 +35,22 @@ const Banner = () => {
       >
         <SwiperSlide>
             <div>
-                <img src="https://i.ibb.co/grkjwLB/steak.jpg" />
+                <img src={b1} />
             </div>    
         </SwiperSlide>
         <SwiperSlide>
             <div>
-                <img src="https://i.ibb.co/3F0XW3r/pizza.png" />
+                <img src={b2} />
             </div>    
         </SwiperSlide>
         <SwiperSlide>
             <div>
-                <img src="https://i.ibb.co/F6yWcft/chicken.png" />
+                <img src={b3} />
+            </div>    
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <img src={b4} />
             </div>    
         </SwiperSlide>
         <div className="autoplay-progress h-[5vh]" slot="container-end">
