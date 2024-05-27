@@ -5,11 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
     const Links = <>
         <NavLink to="/"><li className="text-base font-semibold hover:text-yellow-400">Home</li></NavLink>
-        <NavLink><li className="text-base font-semibold hover:text-yellow-400">Menu</li></NavLink>
-        <NavLink><li className="text-base font-semibold hover:text-yellow-400">Dashboard</li></NavLink>
-        <NavLink><li className="text-base font-semibold hover:text-yellow-400">Cart</li></NavLink>
-        <NavLink><li className="text-base font-semibold hover:text-yellow-400">About</li></NavLink>
-        <NavLink><li className="md:btn md:btn-sm md:bg-transparent md:hover:bg-transparent border-3 md:text-white border-white bg text-base font-semibold hover:text-yellow-400">Login</li></NavLink>
+        <NavLink to='/menu'><li className="text-base font-semibold hover:text-yellow-400">Menu</li></NavLink>
+        <NavLink to='/dashboard'><li className="text-base font-semibold hover:text-yellow-400">Dashboard</li></NavLink>
+        <NavLink to='/cart'><li className="text-base font-semibold hover:text-yellow-400">Cart</li></NavLink>
+        <NavLink to='/about'><li className="text-base font-semibold hover:text-yellow-400">About</li></NavLink>
+        <NavLink to='/login'><li className="md:btn md:btn-sm md:bg-transparent md:hover:bg-transparent border-3 md:text-white border-white bg text-base font-semibold hover:text-yellow-400">Login</li></NavLink>
     </>
     return (
         <div className="md:rounded-md text-white bg-black fixed bg-opacity-30 z-10 container mx-auto md:py-2 px-5">
