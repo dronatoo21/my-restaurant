@@ -1,0 +1,387 @@
+[
+    {
+      "id": 1,
+      "price": 9.99,
+      "name": "Classic Burger",
+      "recipeDescription": "Juicy beef patty with lettuce, tomato, and cheese. Served with fries and a pickle.",
+      "image": "images/classic_burger.jpg",
+      "categoryName": "burger"
+    },
+    {
+      "id": 2,
+      "price": 11.99,
+      "name": "Cheese Burst Burger",
+      "recipeDescription": "Beef patty with molten cheese center. Topped with caramelized onions and bacon.",
+      "image": "images/cheese_burst_burger.jpg",
+      "categoryName": "burger"
+    },
+    {
+      "id": 3,
+      "price": 12.99,
+      "name": "BBQ Bacon Burger",
+      "recipeDescription": "Smoky BBQ sauce, crispy bacon, cheddar cheese. Served with coleslaw.",
+      "image": "images/bbq_bacon_burger.jpg",
+      "categoryName": "burger"
+    },
+    {
+      "id": 4,
+      "price": 10.99,
+      "name": "Mushroom Swiss Burger",
+      "recipeDescription": "Grilled mushrooms, Swiss cheese, garlic aioli. On a toasted brioche bun.",
+      "image": "images/mushroom_swiss_burger.jpg",
+      "categoryName": "burger"
+    },
+    {
+      "id": 5,
+      "price": 13.99,
+      "name": "Spicy Jalapeno Burger",
+      "recipeDescription": "Pepper jack cheese, jalapenos, sriracha mayo. Served with spicy fries.",
+      "image": "images/spicy_jalapeno_burger.jpg",
+      "categoryName": "burger"
+    },
+    {
+      "id": 6,
+      "price": 8.99,
+      "name": "Veggie Burger",
+      "recipeDescription": "Black bean patty, avocado, lettuce, tomato. On a whole wheat bun.",
+      "image": "images/veggie_burger.jpg",
+      "categoryName": "burger"
+    },
+    {
+      "id": 7,
+      "price": 14.99,
+      "name": "Truffle Burger",
+      "recipeDescription": "Truffle aioli, arugula, caramelized onions. Topped with truffle oil.",
+      "image": "images/truffle_burger.jpg",
+      "categoryName": "burger"
+    },
+    {
+      "id": 8,
+      "price": 15.99,
+      "name": "Double Decker Burger",
+      "recipeDescription": "Two beef patties, double cheese, bacon. Extra large with all the fixings.",
+      "image": "images/double_decker_burger.jpg",
+      "categoryName": "burger"
+    },
+    {
+      "id": 9,
+      "price": 12.99,
+      "name": "Margherita Pizza",
+      "recipeDescription": "Fresh mozzarella, tomatoes, and basil. Drizzled with olive oil.",
+      "image": "images/margherita_pizza.jpg",
+      "categoryName": "pizza"
+    },
+    {
+      "id": 10,
+      "price": 13.99,
+      "name": "Pepperoni Pizza",
+      "recipeDescription": "Classic pepperoni with mozzarella cheese. Served with a side of marinara.",
+      "image": "images/pepperoni_pizza.jpg",
+      "categoryName": "pizza"
+    },
+    {
+      "id": 11,
+      "price": 14.99,
+      "name": "BBQ Chicken Pizza",
+      "recipeDescription": "Grilled chicken, BBQ sauce, red onions. Topped with cilantro.",
+      "image": "images/bbq_chicken_pizza.jpg",
+      "categoryName": "pizza"
+    },
+    {
+      "id": 12,
+      "price": 15.99,
+      "name": "Hawaiian Pizza",
+      "recipeDescription": "Ham, pineapple, mozzarella cheese. A sweet and savory delight.",
+      "image": "images/hawaiian_pizza.jpg",
+      "categoryName": "pizza"
+    },
+    {
+      "id": 13,
+      "price": 16.99,
+      "name": "Supreme Pizza",
+      "recipeDescription": "Pepperoni, sausage, bell peppers, onions, olives. All the toppings you love.",
+      "image": "images/supreme_pizza.jpg",
+      "categoryName": "pizza"
+    },
+    {
+      "id": 14,
+      "price": 12.99,
+      "name": "Veggie Pizza",
+      "recipeDescription": "Bell peppers, onions, mushrooms, olives, tomatoes. Fresh and delicious.",
+      "image": "images/veggie_pizza.jpg",
+      "categoryName": "pizza"
+    },
+    {
+      "id": 15,
+      "price": 17.99,
+      "name": "Meat Lover's Pizza",
+      "recipeDescription": "Pepperoni, sausage, bacon, ham, beef. A carnivore's dream.",
+      "image": "images/meat_lovers_pizza.jpg",
+      "categoryName": "pizza"
+    },
+    {
+      "id": 16,
+      "price": 13.99,
+      "name": "Four Cheese Pizza",
+      "recipeDescription": "Mozzarella, cheddar, provolone, parmesan. A cheesy delight.",
+      "image": "images/four_cheese_pizza.jpg",
+      "categoryName": "pizza"
+    },
+    {
+      "id": 17,
+      "price": 14.99,
+      "name": "Spicy Korean Chicken",
+      "recipeDescription": "Crispy chicken in spicy Korean sauce. Garnished with sesame seeds.",
+      "image": "images/spicy_korean_chicken.jpg",
+      "categoryName": "korean food"
+    },
+    {
+      "id": 18,
+      "price": 13.99,
+      "name": "Bibimbap",
+      "recipeDescription": "Mixed rice with vegetables, beef, and egg. Served with gochujang sauce.",
+      "image": "images/bibimbap.jpg",
+      "categoryName": "korean food"
+    },
+    {
+      "id": 19,
+      "price": 12.99,
+      "name": "Bulgogi",
+      "recipeDescription": "Marinated beef with vegetables. Served with steamed rice.",
+      "image": "images/bulgogi.jpg",
+      "categoryName": "korean food"
+    },
+    {
+      "id": 20,
+      "price": 14.99,
+      "name": "Kimchi Stew",
+      "recipeDescription": "Spicy kimchi stew with pork and tofu. Served with steamed rice.",
+      "image": "images/kimchi_stew.jpg",
+      "categoryName": "korean food"
+    },
+    {
+      "id": 21,
+      "price": 11.99,
+      "name": "Japchae",
+      "recipeDescription": "Stir-fried glass noodles with vegetables. Topped with sesame seeds.",
+      "image": "images/japchae.jpg",
+      "categoryName": "korean food"
+    },
+    {
+      "id": 22,
+      "price": 15.99,
+      "name": "Korean Fried Chicken",
+      "recipeDescription": "Crispy fried chicken with spicy glaze. Served with pickled radish.",
+      "image": "images/korean_fried_chicken.jpg",
+      "categoryName": "korean food"
+    },
+    {
+      "id": 23,
+      "price": 13.99,
+      "name": "Tteokbokki",
+      "recipeDescription": "Spicy rice cakes with fish cakes. A popular Korean street food.",
+      "image": "images/tteokbokki.jpg",
+      "categoryName": "korean food"
+    },
+    {
+      "id": 24,
+      "price": 16.99,
+      "name": "Galbi",
+      "recipeDescription": "Grilled beef short ribs in Korean marinade. Served with steamed rice.",
+      "image": "images/galbi.jpg",
+      "categoryName": "korean food"
+    },
+    {
+      "id": 25,
+      "price": 7.99,
+      "name": "Tomato Soup",
+      "recipeDescription": "Creamy tomato soup with basil. Served with garlic bread.",
+      "image": "images/tomato_soup.jpg",
+      "categoryName": "soup"
+    },
+    {
+      "id": 26,
+      "price": 8.99,
+      "name": "Chicken Noodle Soup",
+      "recipeDescription": "Classic chicken soup with noodles. Perfect comfort food.",
+      "image": "images/chicken_noodle_soup.jpg",
+      "categoryName": "soup"
+    },
+    {
+      "id": 27,
+      "price": 9.99,
+      "name": "Minestrone Soup",
+      "recipeDescription": "Italian vegetable soup with beans and pasta. Served with parmesan.",
+      "image": "images/minestrone_soup.jpg",
+      "categoryName": "soup"
+    },
+    {
+      "id": 28,
+      "price": 10.99,
+      "name": "Clam Chowder",
+      "recipeDescription": "Creamy clam chowder with potatoes. Served in a bread bowl.",
+      "image": "images/clam_chowder.jpg",
+      "categoryName": "soup"
+    },
+    {
+      "id": 29,
+      "price": 11.99,
+      "name": "French Onion Soup",
+      "recipeDescription": "Rich onion soup with melted cheese. Served with crusty bread.",
+      "image": "images/french_onion_soup.jpg",
+      "categoryName": "soup"
+    },
+    {
+      "id": 30,
+      "price": 8.99,
+      "name": "Broccoli Cheddar Soup",
+      "recipeDescription": "Creamy soup with broccoli and cheddar. Served with a bread roll.",
+      "image": "images/broccoli_cheddar_soup.jpg",
+      "categoryName": "soup"
+    },
+    {
+      "id": 31,
+      "price": 7.99,
+      "name": "Potato Leek Soup",
+      "recipeDescription": "Smooth and creamy potato leek soup. Garnished with chives.",
+      "image": "images/potato_leek_soup.jpg",
+      "categoryName": "soup"
+    },
+    {
+      "id": 32,
+      "price": 9.99,
+      "name": "Lentil Soup",
+      "recipeDescription": "Hearty lentil soup with vegetables. Perfect for a cold day.",
+      "image": "images/lentil_soup.jpg",
+      "categoryName": "soup"
+    },
+    {
+      "id": 33,
+      "price": 6.99,
+      "name": "Chocolate Cake",
+      "recipeDescription": "Rich and moist chocolate cake. Topped with chocolate ganache.",
+      "image": "images/chocolate_cake.jpg",
+      "categoryName": "desert"
+    },
+    {
+      "id": 34,
+      "price": 7.99,
+      "name": "Cheesecake",
+      "recipeDescription": "Creamy cheesecake with a graham cracker crust. Served with berry sauce.",
+      "image": "images/cheesecake.jpg",
+      "categoryName": "desert"
+    },
+    {
+      "id": 35,
+      "price": 6.99,
+      "name": "Apple Pie",
+      "recipeDescription": "Classic apple pie with a flaky crust. Served with vanilla ice cream.",
+      "image": "images/apple_pie.jpg",
+      "categoryName": "desert"
+    },
+    {
+      "id": 36,
+      "price": 5.99,
+      "name": "Brownie Sundae",
+      "recipeDescription": "Warm brownie with vanilla ice cream. Topped with hot fudge and nuts.",
+      "image": "images/brownie_sundae.jpg",
+      "categoryName": "desert"
+    },
+    {
+      "id": 37,
+      "price": 6.99,
+      "name": "Tiramisu",
+      "recipeDescription": "Layered coffee-flavored Italian dessert. Made with mascarpone cheese.",
+      "image": "images/tiramisu.jpg",
+      "categoryName": "desert"
+    },
+    {
+      "id": 38,
+      "price": 5.99,
+      "name": "Lemon Tart",
+      "recipeDescription": "Tangy lemon tart with a buttery crust. Topped with whipped cream.",
+      "image": "images/lemon_tart.jpg",
+      "categoryName": "desert"
+    },
+    {
+      "id": 39,
+      "price": 7.99,
+      "name": "Creme Brulee",
+      "recipeDescription": "Creamy custard topped with caramelized sugar. Served with fresh berries.",
+      "image": "images/creme_brulee.jpg",
+      "categoryName": "desert"
+    },
+    {
+      "id": 40,
+      "price": 4.99,
+      "name": "Ice Cream Sundae",
+      "recipeDescription": "Vanilla ice cream with hot fudge. Topped with whipped cream and a cherry.",
+      "image": "images/ice_cream_sundae.jpg",
+      "categoryName": "desert"
+    },
+    {
+      "id": 41,
+      "price": 2.99,
+      "name": "Coca Cola",
+      "recipeDescription": "Classic Coke served chilled. Refreshing and fizzy.",
+      "image": "images/coca_cola.jpg",
+      "categoryName": "drinks"
+    },
+    {
+      "id": 42,
+      "price": 2.99,
+      "name": "Lemonade",
+      "recipeDescription": "Freshly squeezed lemonade. Served with a slice of lemon.",
+      "image": "images/lemonade.jpg",
+      "categoryName": "drinks"
+    },
+    {
+      "id": 43,
+      "price": 3.99,
+      "name": "Iced Tea",
+      "recipeDescription": "Chilled iced tea with lemon. Available sweetened or unsweetened.",
+      "image": "images/iced_tea.jpg",
+      "categoryName": "drinks"
+    },
+    {
+      "id": 44,
+      "price": 4.99,
+      "name": "Milkshake",
+      "recipeDescription": "Creamy milkshake available in vanilla, chocolate, or strawberry. Topped with whipped cream.",
+      "image": "images/milkshake.jpg",
+      "categoryName": "drinks"
+    },
+    {
+      "id": 45,
+      "price": 2.99,
+      "name": "Sparkling Water",
+      "recipeDescription": "Refreshing sparkling water. Served with a slice of lime.",
+      "image": "images/sparkling_water.jpg",
+      "categoryName": "drinks"
+    },
+    {
+      "id": 46,
+      "price": 3.49,
+      "name": "Orange Juice",
+      "recipeDescription": "Freshly squeezed orange juice. Served chilled.",
+      "image": "images/orange_juice.jpg",
+      "categoryName": "drinks"
+    },
+    {
+      "id": 47,
+      "price": 3.99,
+      "name": "Smoothie",
+      "recipeDescription": "Blend of fresh fruits and yogurt. Available in various flavors.",
+      "image": "images/smoothie.jpg",
+      "categoryName": "drinks"
+    },
+    {
+      "id": 48,
+      "price": 4.99,
+      "name": "Coffee",
+      "recipeDescription": "Freshly brewed coffee. Available hot or iced.",
+      "image": "images/coffee.jpg",
+      "categoryName": "drinks"
+    }
+]
+  
