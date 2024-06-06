@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { FaBurger } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  
     const Links = <>
         <NavLink to="/"><li className="text-base font-semibold hover:text-yellow-400">Home</li></NavLink>
         <NavLink to='/menu'><li className="text-base font-semibold hover:text-yellow-400">Menu</li></NavLink>
@@ -11,9 +13,18 @@ const Navbar = () => {
         <NavLink to='/about'><li className="text-base font-semibold hover:text-yellow-400">About</li></NavLink>
         <NavLink to='/login'><li className="md:btn md:btn-sm md:bg-transparent md:hover:bg-transparent border-3 md:text-white border-white bg text-base font-semibold hover:text-yellow-400">Login</li></NavLink>
     </>
+    const [navBar, SetNavBar] = useState(false)
+    const ChangeBackground = () => {
+      if(window.scrollY >= 80){
+        SetNavBar(true)
+      }else{
+        SetNavBar(false)
+      }
+    }
+    window.addEventListener('scroll', ChangeBackground)
     return (
-        <div className="md:rounded-md text-white bg-black fixed bg-opacity-30 z-10 container mx-auto md:py-2 px-5">
-            <div className="navbar bg-transparent">
+          <div className={navBar? 'bg-red-950 bg-opacity-95 md:rounded-b-md text-white fixed z-10 container mx-auto md:py-2 px-5' : 'md:rounded-md text-white bg-black bg-opacity-30 fixed z-10 container mx-auto md:py-2 px-5'}>
+            <div className="navbar">
               <div className="flex-1">
                 {/* <Link to="/"><img className="w-24" src="https://i.ibb.co/2PLfjs4/logo.png" alt="logo" /></Link> */}
                 <Link to="/"><FaBurger className="text-2xl text-yellow-400"/></Link>
