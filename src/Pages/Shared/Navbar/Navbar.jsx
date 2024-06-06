@@ -4,7 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  
+    const [navBar, SetNavBar] = useState(false)
     const Links = <>
         <NavLink to="/"><li className="text-base font-semibold hover:text-yellow-400">Home</li></NavLink>
         <NavLink to='/menu'><li className="text-base font-semibold hover:text-yellow-400">Menu</li></NavLink>
@@ -13,7 +13,6 @@ const Navbar = () => {
         <NavLink to='/about'><li className="text-base font-semibold hover:text-yellow-400">About</li></NavLink>
         <NavLink to='/login'><li className="md:btn md:btn-sm md:bg-transparent md:hover:bg-transparent border-3 md:text-white border-white bg text-base font-semibold hover:text-yellow-400">Login</li></NavLink>
     </>
-    const [navBar, SetNavBar] = useState(false)
     const ChangeBackground = () => {
       if(window.scrollY >= 80){
         SetNavBar(true)
