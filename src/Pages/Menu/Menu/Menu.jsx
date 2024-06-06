@@ -22,39 +22,39 @@ const Menu = () => {
                 <div>
                     <img className="lg:h-[550px] md:h-[400px] h-[250px] w-full rounded-b-md" src={menuBanner} alt="Menu" />
                 </div>
-                <div>
-                    <MenuTitle title={'burgers'}/>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-14">
+                <div className="mx-5">
+                    <MenuTitle title={'burgers'} color={'#4b2f2c'}/>
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 mb-14">
                         {
                             burgers?.map(item => <MenuCard key={item?.id} item={item}/>)
                         }
                     </div>
-                    <MenuTitle title={'pizzas'}/>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-14">
+                    <MenuTitle title={'pizzas'} color={'#fbaf28'}/>
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 mb-14">
                         {
                             pizzas?.map(item => <MenuCard key={item?.id} item={item}/>)
                         }
                     </div>
-                    <MenuTitle title={'korean foods'}/>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-14">
+                    <MenuTitle title={'korean foods'} color={'#ee5323'}/>
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 mb-14">
                         {
                             koreanFoods?.map(item => <MenuCard key={item?.id} item={item}/>)
                         }
                     </div>
-                    <MenuTitle title={'soups'}/>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-14">
+                    <MenuTitle title={'soups'} color={'#49873e'}/>
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 mb-14">
                         {
                             soups?.map(item => <MenuCard key={item?.id} item={item}/>)
                         }
                     </div>
-                    <MenuTitle title={'desserts'}/>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-14">
+                    <MenuTitle title={'desserts'} color={'#e63a62'}/>
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 mb-14">
                         {
                             desserts?.map(item => <MenuCard key={item?.id} item={item}/>)
                         }
                     </div>
-                    <MenuTitle title={'drinks'}/>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-14">
+                    <MenuTitle title={'drinks'} color={'#a81d3c'}/>
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 mb-14">
                         {
                             beverages?.map(item => <MenuCard key={item?.id} item={item}/>)
                         }
