@@ -133,7 +133,7 @@
       "name": "Spicy Korean Chicken",
       "recipeDescription": "Crispy chicken in spicy Korean sauce. Garnished with sesame seeds.",
       "image": "https://i.ibb.co/n1qQ1sZ/Spicy-Korean-Chicken.png",
-      "categoryName": "korean food"
+      "categoryName": "korean-food"
   },
   {
       "id": 18,
@@ -141,7 +141,7 @@
       "name": "Bibimbap",
       "recipeDescription": "Mixed rice with vegetables, beef, and egg. Served with gochujang sauce.",
       "image": "https://i.ibb.co/mCnncGS/bibimbap.png",
-      "categoryName": "korean food"
+      "categoryName": "korean-food"
   },
   {
       "id": 19,
@@ -149,7 +149,7 @@
       "name": "Bulgogi",
       "recipeDescription": "Marinated beef with vegetables. Served with steamed rice.",
       "image": "https://i.ibb.co/bQgftRT/bulgogi.png",
-      "categoryName": "korean food"
+      "categoryName": "korean-food"
   },
   {
       "id": 20,
@@ -157,7 +157,7 @@
       "name": "Kimchi Stew",
       "recipeDescription": "Spicy kimchi stew with pork and tofu. Served with steamed rice.",
       "image": "https://i.ibb.co/4jxtQ5H/kimchi-stew.png",
-      "categoryName": "korean food"
+      "categoryName": "korean-food"
   },
   {
       "id": 21,
@@ -165,7 +165,7 @@
       "name": "Japchae",
       "recipeDescription": "Stir-fried glass noodles with vegetables. Topped with sesame seeds.",
       "image": "https://i.ibb.co/FVJ1vrq/japchae.png",
-      "categoryName": "korean food"
+      "categoryName": "korean-food"
   },
   {
       "id": 22,
@@ -173,7 +173,7 @@
       "name": "Korean Fried Chicken",
       "recipeDescription": "Crispy fried chicken with spicy glaze. Served with pickled radish.",
       "image": "https://i.ibb.co/qNg3yBc/korean-fried-chicken.png",
-      "categoryName": "korean food"
+      "categoryName": "korean-food"
   },
   {
       "id": 23,
@@ -181,7 +181,7 @@
       "name": "Tteokbokki",
       "recipeDescription": "Spicy rice cakes with fish cakes. A popular Korean street food.",
       "image": "https://i.ibb.co/cDL2DqP/tteokbokki.png",
-      "categoryName": "korean food"
+      "categoryName": "korean-food"
   },
   {
       "id": 24,
@@ -189,7 +189,7 @@
       "name": "Galbi",
       "recipeDescription": "Grilled beef short ribs in Korean marinade. Served with steamed rice.",
       "image": "https://i.ibb.co/P4sFyjV/galbi.png",
-      "categoryName": "korean food"
+      "categoryName": "korean-food"
   },
   {
       "id": 25,
