@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa";
 const MenuCard = ({item}) => {
     return (
         <div>
-            <div key={item?.id} className="card shadow-md bg-white h-[400px] shadow-neutral-300">
+            <div key={item?.id} className="card shadow-md bg-white rounded-md h-[400px] shadow-neutral-300">
             <figure className="overflow-hidden inline-block"><img className="h-[200px] p-5 w-[250px] hover:scale-110 duration-500 transition" src={item?.image} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title text-base font-bold">{item?.name}</h2>
