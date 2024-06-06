@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import menuBanner from "../../../assets/MenuBanner/menuBanner.png"
 
 const Menu = () => {
     const [menu, setMenu ] = useState([])
@@ -16,8 +17,10 @@ const Menu = () => {
                 <link rel="canonical" href="#" />
             </Helmet>
             <div className="">
-                <h1 className="justify-center mx-auto">Menu</h1>
-                <div className="grid grid-cols-4 gap-5 my-16">
+                <div>
+                    <img className="lg:h-[550px] md:h-[400px] h-[250px] w-full rounded-b-md" src={menuBanner} alt="Menu" />
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-5 my-16 mx-5">
                     {
                         menu?.map(item => <div key={item?.id} className="card h-[500px] bg-slate-400 shadow-xl">
                         <figure><img className="h-[250px] w-[300px]" src={item?.image} alt="Shoes" /></figure>
