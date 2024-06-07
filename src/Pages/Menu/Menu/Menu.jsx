@@ -8,9 +8,11 @@ import { FaBowlRice, FaBurger, FaPizzaSlice } from "react-icons/fa6";
 import { TbSoup } from "react-icons/tb";
 import { GiCakeSlice } from "react-icons/gi";
 import { RiDrinks2Fill } from "react-icons/ri";
+import { useState } from "react";
 
 const Menu = () => {
     const [menu] = useMenu()
+    const [navBar, SetNavBar] = useState(false)
     const burgers = menu?.filter(item => item?.categoryName === 'burger')
     const pizzas = menu?.filter(item => item?.categoryName === 'pizza')
     const koreanFoods = menu?.filter(item => item?.categoryName === 'korean-food')
@@ -20,14 +22,21 @@ const Menu = () => {
     const itemsClass = "rounded-md text-sm md:text-base p-2 uppercase btn bg-transparent font-semibold flex md:flex-row flex-col"
 
     const links = <>
-        <li><Link spy={true} smooth={true} offset={-300} duration={500} className={itemsClass} to="burgers"><FaBurger className="text-[#4b2f2c]"/>Burgers</Link></li>
-        <li><Link spy={true} smooth={true} offset={-300} duration={500} className={itemsClass} to="pizzas"><FaPizzaSlice className="text-[#fbaf28]"/>pizzas</Link></li>
-        <li><Link spy={true} smooth={true} offset={-300} duration={500} className={itemsClass} to="korean"><FaBowlRice className="text-[#ee5323]"/>Korean</Link></li>
-        <li><Link spy={true} smooth={true} offset={-300} duration={500} className={itemsClass} to="soups"><TbSoup className="text-[#49873e]"/>soups</Link></li>
-        <li><Link spy={true} smooth={true} offset={-300} duration={500} className={itemsClass} to="desserts"><GiCakeSlice className="text-[#e63a62]"/>desserts</Link></li>
-        <li><Link spy={true} smooth={true} offset={-300} duration={500} className={itemsClass} to="drinks"><RiDrinks2Fill className="text-[#a81d3c]"/>drinks</Link></li>
+        <li><Link spy={true} smooth={true} offset={-350} duration={500} className={itemsClass} to="burgers"><FaBurger className="text-[#4b2f2c]"/>Burgers</Link></li>
+        <li><Link spy={true} smooth={true} offset={-350} duration={500} className={itemsClass} to="pizzas"><FaPizzaSlice className="text-[#fbaf28]"/>pizzas</Link></li>
+        <li><Link spy={true} smooth={true} offset={-350} duration={500} className={itemsClass} to="korean"><FaBowlRice className="text-[#ee5323]"/>Korean</Link></li>
+        <li><Link spy={true} smooth={true} offset={-350} duration={500} className={itemsClass} to="soups"><TbSoup className="text-[#49873e]"/>soups</Link></li>
+        <li><Link spy={true} smooth={true} offset={-350} duration={500} className={itemsClass} to="desserts"><GiCakeSlice className="text-[#e63a62]"/>desserts</Link></li>
+        <li><Link spy={true} smooth={true} offset={-350} duration={500} className={itemsClass} to="drinks"><RiDrinks2Fill className="text-[#a81d3c]"/>drinks</Link></li>
     </>
-    
+    const ChangeBackground = () => {
+        if(window.scrollY >= 80){
+          SetNavBar(true)
+        }else{
+          SetNavBar(false)
+        }
+      }
+      window.addEventListener('scroll', ChangeBackground)
     return (
         <div className="min-h-[80vh]">
             <Helmet>
@@ -38,12 +47,12 @@ const Menu = () => {
                 <div>
                     <img className="lg:h-[550px] md:h-[400px] h-[250px] w-full rounded-b-md" src={menuBanner} alt="Menu" />
                 </div>
-                <div className="rounded-md mb-5 py-5 px-2 text-center bg-white shadow-md shadow-neutral-200 z-20 ">
+                <div className={navBar? "rounded-b-md mb-5 py-5 px-2 text-center fixed z-10 container mx-auto shadow-md shadow-neutral-200 bg-white top-[60px] md:top-[80px]" : "rounded-md mb-5 py-5 px-2 text-center bg-white shadow-md shadow-neutral-200 z-20"}>
                     <ul className="md:flex grid grid-cols-3 gap-1 md:gap-5 justify-center">
                         {links}
                     </ul>
                 </div>
-                <div className="mx-5 lg:mx-0 ">
+                <div className={navBar? "mx-5 lg:mx-0 md:mt-[120px] mt-[150px]" : "mx-5 lg:mx-0" }>
                     <MenuTitle title={'burgers'} color={'#4b2f2c'}/>
                     <div id="burgers" className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 mb-14">
                         {
