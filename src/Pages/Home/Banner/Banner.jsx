@@ -35,22 +35,22 @@ const Banner = () => {
       >
         <SwiperSlide>
             <div>
-                <img src={b4} />
+                <img loading='lazy' src={b4} />
             </div>    
         </SwiperSlide>
         <SwiperSlide>
             <div>
-                <img src={b3} />
+                <img loading='lazy' src={b3} />
             </div>    
         </SwiperSlide>
         <SwiperSlide>
             <div>
-                <img src={b1} />
+                <img loading='lazy' src={b1} />
             </div>    
         </SwiperSlide>
         <SwiperSlide>
             <div>
-                <img src={b2} />
+                <img loading='lazy' src={b2} />
             </div>    
         </SwiperSlide>
         <div className="autoplay-progress h-[5vh]" slot="container-end">

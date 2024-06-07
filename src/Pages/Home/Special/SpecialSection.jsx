@@ -5,7 +5,7 @@ const SpecialSection = () => {
         <div className="special-section text-white bg-fixed bg-center bg-cover my-10 rounded-md">
             <div className="md:flex py-10 px-12 lg:py-20 lg:px-36 justify-center bg-opacity-60 bg-black">
                 <div>                
-                    <img className="rounded-lg shadow-white mx-auto shadow-sm" src={specialItem} alt="burger" />
+                    <img loading="lazy" className="rounded-lg shadow-white mx-auto shadow-sm" src={specialItem} alt="burger" />
                 </div>
                 <div className="mt-5 md:mt-0 md:ml-10 flex justify-center flex-col gap-2 md:gap-5">                
                     <h3 className="text-lg lg:text-xl font-bold">Burgeroni Burger</h3>
