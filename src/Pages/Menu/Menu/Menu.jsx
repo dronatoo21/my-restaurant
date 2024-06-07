@@ -47,7 +47,7 @@ const Menu = () => {
                 <div>
                     <img className="lg:h-[550px] md:h-[400px] h-[250px] w-full rounded-b-md" src={menuBanner} alt="Menu" />
                 </div>
-                <div className={navBar? "rounded-b-md mb-5 py-5 px-2 text-center fixed z-10 container mx-auto shadow-md shadow-neutral-200 bg-white top-[60px] md:top-[80px]" : "rounded-md mb-5 py-5 px-2 text-center bg-white shadow-md shadow-neutral-200 z-20"}>
+                <div className={navBar? "rounded-b-md mb-5 py-5 px-2 text-center fixed z-10 container mx-auto shadow-sm shadow-slate-300 bg-white top-[60px] md:top-[80px]" : "rounded-md mb-5 py-5 px-2 text-center bg-white shadow-md shadow-neutral-200 z-20"}>
                     <ul className="md:flex grid grid-cols-3 gap-1 md:gap-5 justify-center">
                         {links}
                     </ul>
