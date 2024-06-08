@@ -3,15 +3,16 @@ import Footer from "../../Pages/Shared/Footer/Footer";
 import Navbar from "../../Pages/Shared/Navbar/Navbar";
 
 const Main = () => {
-    const location = useLocation()
-    const isLogin = location?.pathname?.includes('login')
+    const location = useLocation();
+    const isLoginOrRegister = location?.pathname?.includes('login') || location?.pathname?.includes('Register');
+    
     return (
         <div>
-            {isLogin || <Navbar/>}
-                <div className="min-h-[65vh]">
-                    <Outlet/>
-                </div>            
-            {isLogin || <Footer/>}
+            {!isLoginOrRegister && <Navbar />}
+            <div className="min-h-[65vh]">
+                <Outlet />
+            </div>
+            {!isLoginOrRegister && <Footer />}
         </div>
     );
 }; 
