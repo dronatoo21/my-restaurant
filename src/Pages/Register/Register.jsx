@@ -32,9 +32,13 @@ const Register = () => {
                   <button className="btn btn-sm -mt-5 btn-outline border-gray-600">Register</button>
                 </div>
               </form>
-                  <p className='flex items-center justify-center gap-5 -mt-5'><hr className='border-t-2 w-[20%]'/> or <hr className='border-t-2 w-[20%]'/></p>
-                  <button className="btn btn-outline border-none shadow-md bg-white mx-[34px] mt-2"><FcGoogle className='text-2xl'/> Continue with Google</button>
-                  <p className='my-4 mx-[35px]'>Already registered? Please <NavLink className='text-purple-600' to='/login'>Login</NavLink></p>
+                <div className='flex items-center justify-center gap-5 -mt-5'>
+                    <hr className='border-t-2 w-[20%]'/>
+                    <span>or</span>
+                    <hr className='border-t-2 w-[20%]'/>
+                </div>
+                <button className="btn btn-outline border-none shadow-md bg-white mx-[34px] mt-2"><FcGoogle className='text-2xl'/> Continue with Google</button>
+                <p className='my-4 mx-[35px]'>Already registered? Please <NavLink className='text-purple-600' to='/login'>Login</NavLink></p>
             </div>
           </div>
         </div>

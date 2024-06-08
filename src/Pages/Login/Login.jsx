@@ -4,6 +4,13 @@ import './login.css'
 import { NavLink } from 'react-router-dom';
 
 const Login = () => {
+    const handleLogin = event => {
+      event.preventDefault();
+      const form = event?.target;
+      const email = form?.email?.value;
+      const password = form?.password?.value;
+      console.log(email, password);
+    }
     return (
         <div className="min-h-screen flex">
           <div className='flex lg:h-[500px] my-[10%] items-center mx-auto'> 
@@ -12,18 +19,18 @@ const Login = () => {
             </div>
             <div className="card glass shrink-0 lg:py-5 pt-5 rounded-r-xl lg:rounded-l-none rounded-l-xl md:w-[450px] md:h-[450px] bg-[#ffffff] shadow-md">
             <h1 className="font-bold text-xl md:text-xl lg:text-2xl text-center">Please Login!</h1>
-              <form className="card-body">
+              <form onSubmit={handleLogin} className="card-body">
                 <div className="form-control -mt-2">
                   <label className="label">
                     <span className="label-text text-black">Email</span>
                   </label>
-                  <input type="email" placeholder="email" className="input input-bordered h-9" required />
+                  <input type="email" placeholder="email" name='email' className="input input-bordered h-9" required />
                 </div>
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text text-black">Password</span>
                   </label>
-                  <input type="password" placeholder="password" className="input input-bordered h-9" required />
+                  <input type="password" placeholder="password" name='password' className="input input-bordered h-9" required />
                   <label className="label">
                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                   </label>
@@ -32,7 +39,11 @@ const Login = () => {
                   <button className="btn btn-sm -mt-5 btn-outline border-gray-600">Login</button>
                 </div>
               </form>
-                  <p className='flex items-center justify-center gap-5 -mt-5'><hr className='border-t-2 w-[20%]'/> or <hr className='border-t-2 w-[20%]'/></p>
+                  <div className='flex items-center justify-center gap-5 -mt-5'>
+                    <hr className='border-t-2 w-[20%]'/>
+                    <span>or</span>
+                    <hr className='border-t-2 w-[20%]'/>
+                  </div>
                   <button className="btn btn-outline border-none shadow-md bg-white mx-[34px] mt-2"><FcGoogle className='text-2xl'/> Continue with Google</button>
                   <p className='my-4 mx-[35px]'>New here? Please <NavLink className='text-purple-600' to='/register'>Register</NavLink></p>
             </div>
