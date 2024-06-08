@@ -7,6 +7,9 @@ import Menu from "../Pages/Menu/Menu/Menu";
 import MainError from "../Pages/ErrorPage/MainError/MainError";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import Cart from "../Pages/Cart/Cart";
+import Contact from "../Pages/Contact/Contact";
+import Location from "../Pages/Location/Location";
 
 export const router = createBrowserRouter([
     {
@@ -29,6 +32,18 @@ export const router = createBrowserRouter([
         {
           path: "/register",
           element: <Register/>
+        },
+        {
+          path: "/cart",
+          element: <Cart/>
+        },
+        {
+          path: "/contact",
+          element: <Contact/>
+        },
+        {
+          path: "/location",
+          element: <Location/>
         }
       ],
     },
