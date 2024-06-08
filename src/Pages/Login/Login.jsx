@@ -1,14 +1,13 @@
 import { FcGoogle } from 'react-icons/fc';
 import loginBanner from '../../assets/login/loginBan.png'
 import './login.css'
-import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 
 const Login = () => {
     return (
         <div className="min-h-screen flex">
           <div className='flex lg:h-[500px] my-[10%] items-center mx-auto'> 
-            <div className='h-[450px] hidden lg:flex rounded-l-xl w-[450px] shadow-md lg:justify-center lg:items-center log-bg'>
+            <div className='min-h-[450px] hidden lg:flex rounded-l-xl w-[450px] shadow-md lg:justify-center lg:items-center log-bg'>
               <img className='w-[300px] opacity-80' src={loginBanner} alt="" />
             </div>
             <div className="card glass shrink-0 lg:py-5 pt-5 rounded-r-xl lg:rounded-l-none rounded-l-xl md:w-[450px] md:h-[450px] bg-[#ffffff] shadow-md">
@@ -34,7 +33,7 @@ const Login = () => {
                 </div>
               </form>
                   <p className='flex items-center justify-center gap-5 -mt-5'><hr className='border-t-2 w-[20%]'/> or <hr className='border-t-2 w-[20%]'/></p>
-                  <button className="btn btn-outline border-none shadow-md bg-white mx-[35px] mt-2"><FcGoogle className='text-2xl'/> Continue with Google</button>
+                  <button className="btn btn-outline border-none shadow-md bg-white mx-[34px] mt-2"><FcGoogle className='text-2xl'/> Continue with Google</button>
                   <p className='my-4 mx-[35px]'>New here? Please <NavLink className='text-purple-600' to='/register'>Register</NavLink></p>
             </div>
           </div>
