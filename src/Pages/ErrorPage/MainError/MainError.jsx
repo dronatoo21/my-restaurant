@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
-import ErrorAnimation from '../../../../public/404.json'
+import ErrorAnimation from "../../../../public/404.json" 
 
 const MainError = () => {
     return (

@@ -52,7 +52,7 @@ const Menu = () => {
                         {links}
                     </ul>
                 </div>
-                <div className={navBar? "mx-5 lg:mx-0 md:mt-[120px] mt-[150px]" : "mx-5 lg:mx-0" }>
+                <div className={navBar? "mx-5 lg:mx-3 md:mt-[120px] mt-[150px]" : "mx-5 lg:mx-3" }>
                     <MenuTitle title={'burgers'} color={'#4b2f2c'}/>
                     <div id="burgers" className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 mb-14">
                         {

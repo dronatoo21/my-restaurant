@@ -31,7 +31,7 @@ const Banner = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper rounded-sm"
+        className="mySwiper rounded-sm max-h-[90vh]"
       >
         <SwiperSlide>
             <div>
