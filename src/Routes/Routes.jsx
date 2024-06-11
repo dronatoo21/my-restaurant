@@ -10,7 +10,6 @@ import Register from "../Pages/Register/Register";
 import Cart from "../Pages/Cart/Cart";
 import Contact from "../Pages/Contact/Contact";
 import Location from "../Pages/Location/Location";
-import ScrollToSection from "../Components/ScrollToSection/ScrollToSection";
 
 export const router = createBrowserRouter([
     {
@@ -25,10 +24,6 @@ export const router = createBrowserRouter([
         {
           path: "/menu",
           element: <Menu/>
-        },
-        {
-          path: "/menu/:sectionId",
-          element: <ScrollToSection/>
         },
         {
           path: "/login",
