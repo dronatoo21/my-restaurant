@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { FaBurger } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+    const location = useLocation()
     const [navBar, SetNavBar] = useState(false)
+    console.log(location);
     const Links = <>
         <NavLink style={({ isActive })=> ({borderBottom: isActive ? "2px solid white" : " ", borderLeft: isActive ? "4px solid white" : " ",})} className="text-base font-semibold hover:text-yellow-400 rounded-full p-1" to="/"><li >Home</li></NavLink>
         <NavLink style={({ isActive })=> ({borderBottom: isActive ? "2px solid white" : " ", borderLeft: isActive ? "4px solid white" : " ",})} className="text-base font-semibold hover:text-yellow-400 rounded-full p-1" to='/menu'><li>Menu</li></NavLink>
@@ -14,7 +16,7 @@ const Navbar = () => {
         <NavLink to='/login'><li className="md:btn md:btn-sm md:bg-transparent md:hover:bg-transparent border-3 md:text-white border-white bg text-base font-semibold hover:text-yellow-400">Login</li></NavLink>
     </>
     const ChangeBackground = () => {
-      if(window.scrollY >= 80){
+      if(window.scrollY >= 80 || location?.pathname != '/'){
         SetNavBar(true)
       }else{
         SetNavBar(false)

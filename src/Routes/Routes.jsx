@@ -10,6 +10,9 @@ import Register from "../Pages/Register/Register";
 import Cart from "../Pages/Cart/Cart";
 import Contact from "../Pages/Contact/Contact";
 import Location from "../Pages/Location/Location";
+import BurgersPage from "../Pages/FeaturedPages/BurgersPage";
+import PizzasPage from "../Pages/FeaturedPages/PizzasPage";
+import KoreansPage from "../Pages/FeaturedPages/KoreansPage";
 
 export const router = createBrowserRouter([
     {
@@ -44,6 +47,18 @@ export const router = createBrowserRouter([
         {
           path: "/location",
           element: <Location/>
+        },
+        {
+          path: "/burgers",
+          element: <BurgersPage/>
+        },
+        {
+          path: "/pizzas",
+          element: <PizzasPage/>
+        },
+        {
+          path: "/korean",
+          element: <KoreansPage/>
         }
       ],
     },
