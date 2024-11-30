@@ -27,7 +27,7 @@ const Register = () => {
                   <label className="label">
                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                   </label>
-                </div>
+                </div> 
                 <div className="form-control mt-6 gap-2">
                   <button className="btn btn-sm -mt-5 btn-outline border-gray-600">Register</button>
                 </div>
