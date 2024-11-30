@@ -1,7 +1,7 @@
 const PizzasPage = () => {
     return (
         <div className="h-[80vh]">
-            Pizzas
+            Pizzass
         </div>
     );
 };
