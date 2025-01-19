@@ -1,15 +1,31 @@
 import { FcGoogle } from 'react-icons/fc';
 import loginBanner from '../../assets/login/loginBan.png'
 import './login.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { GoogleAuthProvider } from 'firebase/auth/web-extension';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Login = () => {
+    const { googleSignIn } = useContext(AuthContext);
+    const googleAuthProvider = new GoogleAuthProvider();
+    const navigate = useNavigate();
+    const location = useLocation();
     const handleLogin = event => {
       event.preventDefault();
       const form = event?.target;
       const email = form?.email?.value;
       const password = form?.password?.value;
       console.log(email, password);
+    }
+    
+    const handleGoogleLogin = () => {
+      googleSignIn(googleAuthProvider)
+      .then(res => {
+        console.log(res?.user);
+        navigate(location?.state ? location.state : '/');
+      })
+      .catch(error => {error?.message})
     }
     return (
         <div className="min-h-screen flex">
@@ -44,7 +60,7 @@ const Login = () => {
                     <span>or</span>
                     <hr className='border-t-2 w-[20%]'/>
                   </div>
-                  <button className="btn btn-outline border-none shadow-md bg-white mx-[34px] mt-2"><FcGoogle className='text-2xl'/> Continue with Google</button>
+                  <button onClick={handleGoogleLogin} className="btn btn-outline border-none shadow-md bg-white mx-[34px] mt-2"><FcGoogle className='text-2xl'/> Continue with Google</button>
                   <p className='my-4 mx-[35px]'>New here? Please <NavLink className='text-purple-600' to='/register'>Register</NavLink></p>
             </div>
           </div>
