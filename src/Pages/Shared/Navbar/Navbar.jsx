@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaBurger } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
     const location = useLocation()
+    const {logout} = useContext(AuthContext)
     const [navBar, SetNavBar] = useState(false)
     console.log(location);
+    const handleLogout = () => {
+      logout();
+    }
     const Links = <>
         <NavLink style={({ isActive })=> ({borderBottom: isActive ? "2px solid white" : " ", borderLeft: isActive ? "4px solid white" : " ",})} className="text-base font-semibold hover:text-yellow-400 rounded-full p-1" to="/"><li >Home</li></NavLink>
         <NavLink style={({ isActive })=> ({borderBottom: isActive ? "2px solid white" : " ", borderLeft: isActive ? "4px solid white" : " ",})} className="text-base font-semibold hover:text-yellow-400 rounded-full p-1" to='/menu'><li>Menu</li></NavLink>
@@ -14,6 +19,7 @@ const Navbar = () => {
         <NavLink style={({ isActive })=> ({borderBottom: isActive ? "2px solid white" : " ", borderLeft: isActive ? "4px solid white" : " ",})} className="text-base font-semibold hover:text-yellow-400 rounded-full p-1" to='/contact'><li>Contact</li></NavLink>
         <NavLink style={({ isActive })=> ({borderBottom: isActive ? "2px solid white" : " ", borderLeft: isActive ? "4px solid white" : " ",})} className="text-base font-semibold hover:text-yellow-400 rounded-full p-1" to='/location'><li>Loaction</li></NavLink>
         <NavLink to='/login'><li className="md:btn md:btn-sm md:bg-transparent md:hover:bg-transparent border-3 md:text-white border-white bg text-base font-semibold hover:text-yellow-400">Login</li></NavLink>
+        <NavLink onClick={handleLogout}><li className="md:btn md:btn-sm md:bg-transparent md:hover:bg-transparent border-3 md:text-white border-white bg text-base font-semibold hover:text-yellow-400">Logout</li></NavLink>
     </>
     const ChangeBackground = () => {
       if(window.scrollY >= 80 || location?.pathname != '/'){

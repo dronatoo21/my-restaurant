@@ -3,8 +3,8 @@ import loginBanner from '../../assets/login/loginBan.png'
 import './login.css'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import { GoogleAuthProvider } from 'firebase/auth/web-extension';
 import { AuthContext } from '../../providers/AuthProvider';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
     const { googleSignIn } = useContext(AuthContext);
@@ -18,8 +18,9 @@ const Login = () => {
       const password = form?.password?.value;
       console.log(email, password);
     }
-    
+
     const handleGoogleLogin = () => {
+      console.log("hi");
       googleSignIn(googleAuthProvider)
       .then(res => {
         console.log(res?.user);
