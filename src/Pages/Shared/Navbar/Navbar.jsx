@@ -27,7 +27,7 @@ const Navbar = () => {
       }else{
         SetNavBar(false)
       }
-    }
+    } 
     window.addEventListener('scroll', ChangeBackground)
     return (
           <div className={navBar? 'bg-[#521500] bg-opacity-95 md:rounded-b-md text-white fixed z-10 container mx-auto md:py-2 px-5' : 'md:rounded-md text-white bg-black bg-opacity-30 fixed z-10 container mx-auto md:py-2 px-5'}>
