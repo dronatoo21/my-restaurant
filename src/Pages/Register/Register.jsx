@@ -21,7 +21,7 @@ const Register = () => {
       navigate(location?.state ? location.state : '/');
     })
     .catch(error => {error?.message})
-  }  
+  }   
     
     const handleRegister = e => {
         e.preventDefault();
