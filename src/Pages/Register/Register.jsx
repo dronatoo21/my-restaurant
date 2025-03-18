@@ -22,7 +22,7 @@ const Register = () => {
     })
     .catch(error => {error?.message})
   }   
-     
+      
     const handleRegister = e => {
         e.preventDefault();
         const name = e.target.name.value;
