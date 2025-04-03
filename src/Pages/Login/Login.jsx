@@ -44,7 +44,7 @@ const Login = () => {
                   <input type="email" placeholder="email" name='email' className="input input-bordered h-9" required />
                 </div>
                 <div className="form-control">
-                  <label className="label">
+                  <label className="label"> 
                     <span className="label-text text-black">Password</span>
                   </label>
                   <input type="password" placeholder="password" name='password' className="input input-bordered h-9" required />
