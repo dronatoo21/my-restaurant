@@ -92,7 +92,7 @@ const Register = () => {
                   </label>
                 </div> 
                 <div className="form-control mt-6 gap-2">
-                  <button className="btn btn-sm -mt-5 btn-outline border-gray-600">Register</button>
+                  <button className="btn btn-sm shadow-sm -mt-5 btn-outline border-gray-600">Register</button>
                 </div>
               </form>
                 <div className='flex items-center justify-center gap-5 -mt-5'>

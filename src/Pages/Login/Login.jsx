@@ -53,7 +53,7 @@ const Login = () => {
                   </label>
                 </div>
                 <div className="form-control mt-6 gap-2">
-                  <button className="btn btn-sm -mt-5 btn-outline border-gray-600">Login</button>
+                  <button className="btn btn-sm -mt-5 shadow-sm btn-outline border-gray-600">Login</button>
                 </div>
               </form>
                   <div className='flex items-center justify-center gap-5 -mt-5'>
