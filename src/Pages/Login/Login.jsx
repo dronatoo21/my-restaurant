@@ -43,7 +43,7 @@ const Login = () => {
                   </label>
                   <input type="email" placeholder="email" name='email' className="input input-bordered h-9" required />
                 </div>
-                <div className="form-control">
+                <div className="form-control"> 
                   <label className="label"> 
                     <span className="label-text text-black">Password</span>
                   </label>
@@ -63,7 +63,7 @@ const Login = () => {
                   </div>
                   <button onClick={handleGoogleLogin} className="btn btn-outline border-none shadow-md bg-white mx-[34px] mt-2"><FcGoogle className='text-2xl'/> Continue with Google</button>
                   <p className='my-4 mx-[35px]'>New here? Please <NavLink className='text-purple-600' to='/register'>Register</NavLink></p>
-            </div>
+            </div> 
           </div>
         </div>
     );
