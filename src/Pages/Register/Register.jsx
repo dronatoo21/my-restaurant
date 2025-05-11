@@ -29,7 +29,7 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         const checked = e.target.checkbox.checked;
-        // const photoUrl = e.target.photourl.value; 
+        // const photoUrl = e.target.photourl.value;  
         console.log(name, email, password);
         setRegisterError('');
         setSuccess('');
