@@ -12,7 +12,7 @@ const Register = () => {
     const [success, setSuccess] = useState('');
   const googleAuthProvider = new GoogleAuthProvider()
   const navigate = useNavigate();
-  const location = useLocation();
+  const location = useLocation(); 
 
   const handleGoogleLogin = () => {
     googleSignIn(googleAuthProvider)
