@@ -30,7 +30,7 @@ const Register = () => {
         const password = e.target.password.value;
         const checked = e.target.checkbox.checked;
         // const photoUrl = e.target.photourl.value;  
-        console.log(name, email, password);    
+        console.log(name, email, password);   
         setRegisterError('');
         setSuccess('');
         if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)){
