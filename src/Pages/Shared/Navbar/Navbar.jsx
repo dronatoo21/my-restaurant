@@ -26,7 +26,7 @@ const Navbar = () => {
         SetNavBar(true)
       }else{
         SetNavBar(false)
-      } 
+      }  
     } 
     window.addEventListener('scroll', ChangeBackground)
     return (
