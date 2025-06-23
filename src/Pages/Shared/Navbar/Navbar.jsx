@@ -23,7 +23,7 @@ const Navbar = () => {
     </>
     const ChangeBackground = () => {
       if(window.scrollY >= 80 || location?.pathname != '/'){
-        SetNavBar(true)
+        SetNavBar(true) 
       }else{
         SetNavBar(false)
       }
